@@ -52,10 +52,36 @@ box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     display: flex;
     column-gap: 15px;
 }
-
+.form .gender-box{
+    margin-top: 20px;
+}
+.gender-box h3{
+    color: #333;
+    font-style: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+.form .gender{
+    column-gap: 5px;
+}
+.form :where( .gender input, .gender label){
+    cursor: pointer;
+}
 /* responsive */
 @media screen and (max-width: 500px) {
     .form .column{
+        flex-wrap: wrap;
+    }
+    .form :where(.gender-option, .gender) {
+        display: flex;
+        align-items: center;
+        column-gap: 50px;
         flex-wrap: wrap;
     }
 }
