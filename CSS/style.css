@@ -19,14 +19,12 @@ background-color: #fff;
 padding: 25px;
 border-radius: 8px;
 box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-background-color: red;
 }
 .container header{
     font-size: 1.5rem;
     color: #333;
     font-weight: 500;
     text-align: center;
-    background-color: yellow;
 }
 .container .form{
     margin-top: 30px;
@@ -43,8 +41,21 @@ background-color: red;
     position: relative;
     height: 50px;
     width: 100%;
+    font-size: 1rem;
+    color: #707070;
     outline: none;
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 0 15px;
+}
+.form .column{
+    display: flex;
+    column-gap: 15px;
+}
+
+/* responsive */
+@media screen and (max-width: 500px) {
+    .form .column{
+        flex-wrap: wrap;
+    }
 }
