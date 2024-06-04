@@ -75,11 +75,12 @@ box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 .addres :where(input, .select-box){
     margin-top: 20px;
 }
-.select-box select{
+.column .select-box select{
     height: 100%;
     width: 100%;
     outline: none;
     border: none;
+    border-radius: 10px;
     color: #707070;
     font-size: 1rem;
 }
@@ -97,6 +98,9 @@ box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 .form button:hover{
     background-color: rgb(88, 56, 250);
+}
+.gender input{
+    accent-color: rgb(130, 106, 251);
 }
 /* responsive */
 @media screen and (max-width: 500px) {
